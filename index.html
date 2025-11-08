@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPERIYA - Элитный Клуб</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>IMPERIYA</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Главная</a>
+                <a href="#about" class="nav-link">О Клубе</a>
+                <a href="#members" class="nav-link">Члены Клуба</a>
+                <a href="#events" class="nav-link">События</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">IMPERIYA</h1>
+            <p class="hero-subtitle">Элитный Клуб Избранных</p>
+            <p class="hero-quote">"Когда вы играете в игру престолов, вы либо побеждаете, либо умираете"</p>
+            <button class="cta-button">Вступить в Клуб</button>
+        </div>
+    </section>
+
+    <!-- О клубе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О Нашем Клубе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>IMPERIYA - это закрытое сообщество выдающихся личностей, где сила, мудрость и благородство определяют твое место за столом.</p>
+                    <p>Мы объединяем лидеров, мыслителей и воинов современности в духе великих домов Вестероса.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <h3>🏰 Благородство</h3>
+                        <p>Честь и достоинство - наши главные принципы</p>
+                    </div>
+                    <div class="feature">
+                        <h3>⚔️ Сила</h3>
+                        <p>Сила в единстве и стратегическом мышлении</p>
+                    </div>
+                    <div class="feature">
+                        <h3>👑 Власть</h3>
+                        <p>Влияние, основанное на мудрости и опыте</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Члены клуба -->
+    <section id="members" class="members">
+        <div class="container">
+            <h2 class="section-title">Великие Дома</h2>
+            <div class="houses-grid">
+                <div class="house-card">
+                    <div class="house-icon">🐺</div>
+                    <h3>Дом Старков</h3>
+                    <p>Зима близко. Честь и верность.</p>
+                </div>
+                <div class="house-card">
+                    <div class="house-icon">🦁</div>
+                    <h3>Дом Ланистеров</h3>
+                    <p>Ланистеры всегда платят свои долги.</p>
+                </div>
+                <div class="house-card">
+                    <div class="house-icon">🐲</div>
+                    <h3>Дом Таргариенов</h3>
+                    <p>Огонь и кровь.</p>
+                </div>
+                <div class="house-card">
+                    <div class="house-icon">🎭</div>
+                    <h3>Ваш Дом</h3>
+                    <p>Присоединяйтесь и создайте свою легенду.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- События -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Грядущие События</h2>
+            <div class="events-timeline">
+                <div class="event">
+                    <div class="event-date">Великий Совет</div>
+                    <div class="event-title">Выборы нового лидера</div>
+                    <div class="event-desc">Собрание для избрания достойного правителя</div>
+                </div>
+                <div class="event">
+                    <div class="event-date">Турнир</div>
+                    <div class="event-title">Состязание чемпионов</div>
+                    <div class="event-desc">Испытание силы и мастерства</div>
+                </div>
+                <div class="event">
+                    <div class="event-date">Пир</div>
+                    <div class="event-title">Королевский прием</div>
+                    <div class="event-desc">Торжество в честь новых союзов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Зал Трона</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Подать Заявку</h3>
+                    <p>Только достойные могут претендовать на место в нашем клубе</p>
+                    <div class="contact-details">
+                        <p>📧 raven@imperiya.com</p>
+                        <p>🏰 Красный Замок, Королевская Гавань</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше Имя" required>
+                    <input type="email" placeholder="Воронья Почта" required>
+                    <textarea placeholder="Ваше Послание..." required></textarea>
+                    <button type="submit">Отправить Ворона</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 IMPERIYA. Все права защищены.</p>
+            <p>Зима близко. Будьте готовы.</p>
+        </div>
+    </footer>
+
+    <script src="src.js"></script>
+</body>
+</html>
