@@ -1,156 +1,225 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPERIYA - Элитный Клуб</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=MedievalSharp&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IMPERIYA</title>
+  <meta name="description" content="IMPERIYA — футбольный клуб. Матчи, состав, события и контакты. Эстетика Game of Thrones: благородство, сила, власть." />
+  <meta name="theme-color" content="#0c0c0c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=MedievalSharp&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="IMPERIYA — Футбольный клуб" />
+  <meta property="og:description" content="История матчей, состав клуба, события и контакты." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80" />
 </head>
 <body>
-    <!-- Навигация -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>IMPERIYA</h1>
-            </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Главная</a>
-                <a href="#about" class="nav-link">О Клубе</a>
-                <a href="#members" class="nav-link">Члены Клуба</a>
-                <a href="#events" class="nav-link">События</a>
-                <a href="#contact" class="nav-link">Контакты</a>
-            </div>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <!-- Навигация -->
+  <header class="navbar" role="banner">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home" aria-label="IMPERIYA — на главную">
+        <h1>IMPERIYA</h1>
+      </a>
+      <nav class="nav-menu" aria-label="Главная навигация">
+        <a href="#home" class="nav-link">Bosh sahifa</a>
+        <a href="#about" class="nav-link">Team haqida</a>
+        <a href="#squad" class="nav-link">Trakib</a>
+        <a href="#history" class="nav-link">O`yinlar tarixi</a>
+        <a href="#events" class="nav-link">События</a>
+        <a href="#contact" class="nav-link">Aloqa</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- Главный баннер -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">IMPERIYA</h1>
-            <p class="hero-subtitle">Элитный Клуб Избранных</p>
-            <p class="hero-quote">"Когда вы играете в игру престолов, вы либо побеждаете, либо умираете"</p>
-            <button class="cta-button">Вступить в Клуб</button>
-        </div>
-    </section>
+  <!-- Главный баннер -->
+  <section id="home" class="hero" aria-label="Главный раздел">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="badge">Est. 2025</p>
+      <h2 class="hero-title" data-type="IMPERIYA TEAM">IMPERIYA TEAM</h2>
+      <p class="hero-subtitle"></p>
+      <p class="hero-quote">«Kuch adolatdadir!»</p>
+      <div class="hero-cta">
+        <a class="cta-button" href="#squad">Team tarkibi</a>
+        <a class="cta-button cta-alt" href="#history">O`yinlar tarixi</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- О клубе -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">О Нашем Клубе</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>IMPERIYA - это закрытое сообщество выдающихся личностей, где сила, мудрость и благородство определяют твое место за столом.</p>
-                    <p>Мы объединяем лидеров, мыслителей и воинов современности в духе великих домов Вестероса.</p>
-                </div>
-                <div class="about-features">
-                    <div class="feature">
-                        <h3>🏰 Благородство</h3>
-                        <p>Честь и достоинство - наши главные принципы</p>
-                    </div>
-                    <div class="feature">
-                        <h3>⚔️ Сила</h3>
-                        <p>Сила в единстве и стратегическом мышлении</p>
-                    </div>
-                    <div class="feature">
-                        <h3>👑 Власть</h3>
-                        <p>Влияние, основанное на мудрости и опыте</p>
-                    </div>
-                </div>
-            </div>
+  <!-- О клубе -->
+  <section id="about" class="about">
+    <div class="container">
+      <h3 class="section-title">Team Haqida</h3>
+      <div class="about-content">
+        <div class="about-text">
+          <p>IMPERIYA - bu intizom va strategiya tasodifdan muhimroq bo'lgan jamoa. Biz o'yinchilar, menejerlar va muxlislarni birgalikda g'alabalarni qo'lga kiritish uchun birlashtiramiz.</p>
+          <p>Estetika Vesterosning buyuk uylarini aks ettiradi, ammo maydonda biz zamonaviy g'oyalar, statistika va adolatli o'yinni qabul qilamiz.</p>
+          <ul class="pill-list" role="list">
+            <li>Zodagonlik - biz adolatli o'ynaymiz</li>
+            <li>Kuch - Biz jamoa sifatida g'alaba qozonamiz</li>
+            <li>Kuch — biz natijalarga ta'sir qilamiz</li>
+          </ul>
         </div>
-    </section>
+        <aside class="about-panel" aria-label="Ключевые факты">
+          <div class="fact">
+            <span class="fact-num" data-counter="18">0</span>
+            <span class="fact-label">O`tkazilgan o`yinlar</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num" data-counter="12">0</span>
+            <span class="fact-label">G`alabalar</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num" data-counter="36">0</span>
+            <span class="fact-label">Urilgan gollar</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-    <!-- Члены клуба -->
-    <section id="members" class="members">
-        <div class="container">
-            <h2 class="section-title">Великие Дома</h2>
-            <div class="houses-grid">
-                <div class="house-card">
-                    <div class="house-icon">🐺</div>
-                    <h3>Дом Старков</h3>
-                    <p>Зима близко. Честь и верность.</p>
-                </div>
-                <div class="house-card">
-                    <div class="house-icon">🦁</div>
-                    <h3>Дом Ланистеров</h3>
-                    <p>Ланистеры всегда платят свои долги.</p>
-                </div>
-                <div class="house-card">
-                    <div class="house-icon">🐲</div>
-                    <h3>Дом Таргариенов</h3>
-                    <p>Огонь и кровь.</p>
-                </div>
-                <div class="house-card">
-                    <div class="house-icon">🎭</div>
-                    <h3>Ваш Дом</h3>
-                    <p>Присоединяйтесь и создайте свою легенду.</p>
-                </div>
-            </div>
+  <!-- Состав клуба -->
+  <section id="squad" class="squad">
+    <div class="container">
+      <h3 class="section-title">Asosiy tarkib</h3>
+
+      <div class="toolbar">
+        <input id="playerSearch" class="input" type="search" placeholder="Поиск игрока..." aria-label="Поиск игрока" />
+        <select id="positionFilter" class="select" aria-label="Фильтр по амплуа">
+          <option value="">Все позиции</option>
+          <option value="GK">GK — Вратарь</option>
+          <option value="DEF">DEF — Защитник</option>
+          <option value="MID">MID — Полузащитник</option>
+          <option value="FWD">FWD — Нападающий</option>
+        </select>
+        <select id="footFilter" class="select" aria-label="Фильтр по рабочей ноге">
+          <option value="">Любая нога</option>
+          <option value="left">Левая</option>
+          <option value="right">Правая</option>
+          <option value="both">Двуногий</option>
+        </select>
+      </div>
+
+      <div id="squadGrid" class="squad-grid" aria-live="polite"></div>
+      <p id="squadEmpty" class="empty hidden">Ничего не найдено. Попробуйте изменить фильтры.</p>
+    </div>
+  </section>
+
+  <!-- История матчей -->
+  <section id="history" class="history">
+    <div class="container">
+      <h3 class="section-title">История матчей</h3>
+
+      <div class="toolbar">
+        <input id="opponentSearch" class="input" type="search" placeholder="Соперник..." aria-label="Поиск по сопернику" />
+        <select id="resultFilter" class="select" aria-label="Фильтр по результату">
+          <option value="">Все результаты</option>
+          <option value="W">Победа</option>
+          <option value="D">Ничья</option>
+          <option value="L">Поражение</option>
+        </select>
+        <select id="sortBy" class="select" aria-label="Сортировка">
+          <option value="date_desc">Сначала новые</option>
+          <option value="date_asc">Сначала старые</option>
+          <option value="gf_desc">Больше забито</option>
+          <option value="ga_desc">Больше пропущено</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Соперник</th>
+              <th>Счёт</th>
+              <th>Результат</th>
+              <th>Турнир</th>
+              <th>Бомбардиры</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+
+      <div class="summary-cards" id="summaryCards" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- События -->
+  <section id="events" class="events">
+    <div class="container">
+      <h3 class="section-title">События</h3>
+      <div class="events-timeline">
+        <article class="event">
+          <div class="event-date">Ноябрь 2025</div>
+          <h4 class="event-title">Великий Совет</h4>
+          <p class="event-desc">Предсезонная встреча команды. Обсуждаем цели и трансферы.</p>
+        </article>
+        <article class="event">
+          <div class="event-date">Декабрь 2025</div>
+          <h4 class="event-title">Зимний Турнир</h4>
+          <p class="event-desc">Серия товарищеских матчей с локальными клубами.</p>
+        </article>
+        <article class="event">
+          <div class="event-date">Январь 2026</div>
+          <h4 class="event-title">Королевский Пир (тимбилдинг)</h4>
+          <p class="event-desc">Награждение лучших и планы на сезон.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3 class="section-title">Зал трона (контакты)</h3>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>Хотите сыграть спарринг, вступить в клуб или предложить партнёрство?</p>
+          <div class="contact-details">
+            <p>📧 <a href="mailto:imperiya.fc@gmail.com">imperiya.fc@gmail.com</a></p>
+            <p>📍 Дубай, ОАЭ</p>
+          </div>
+          <small class="privacy-note">Отправляя форму, вы соглашаетесь с обработкой данных строго для связи по вашим вопросам.</small>
         </div>
-    </section>
+        <form class="contact-form" aria-label="Форма связи">
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="email" name="email" placeholder="Ваш email" required />
+          <textarea name="message" placeholder="Ваше сообщение..." rows="5" required></textarea>
+          <button type="submit">Отправить</button>
+          <p class="form-ok hidden" role="status">Спасибо! Мы ответим вам в ближайшее время.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <!-- События -->
-    <section id="events" class="events">
-        <div class="container">
-            <h2 class="section-title">Грядущие События</h2>
-            <div class="events-timeline">
-                <div class="event">
-                    <div class="event-date">Великий Совет</div>
-                    <div class="event-title">Выборы нового лидера</div>
-                    <div class="event-desc">Собрание для избрания достойного правителя</div>
-                </div>
-                <div class="event">
-                    <div class="event-date">Турнир</div>
-                    <div class="event-title">Состязание чемпионов</div>
-                    <div class="event-desc">Испытание силы и мастерства</div>
-                </div>
-                <div class="event">
-                    <div class="event-date">Пир</div>
-                    <div class="event-title">Королевский прием</div>
-                    <div class="event-desc">Торжество в честь новых союзов</div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2024–2026 IMPERIYA. Все права защищены.</p>
+      <nav class="footer-nav">
+        <a href="#about">О клубе</a>
+        <a href="#squad">Состав</a>
+        <a href="#history">Матчи</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </footer>
 
-    <!-- Контакты -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Зал Трона</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Подать Заявку</h3>
-                    <p>Только достойные могут претендовать на место в нашем клубе</p>
-                    <div class="contact-details">
-                        <p>📧 raven@imperiya.com</p>
-                        <p>🏰 Красный Замок, Королевская Гавань</p>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Ваше Имя" required>
-                    <input type="email" placeholder="Воронья Почта" required>
-                    <textarea placeholder="Ваше Послание..." required></textarea>
-                    <button type="submit">Отправить Ворона</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <!-- Модал игрока -->
+  <div id="playerModal" class="modal" aria-hidden="true" aria-modal="true" role="dialog">
+    <div class="modal-card" role="document">
+      <button class="modal-close" aria-label="Закрыть">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 
-    <!-- Футер -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 IMPERIYA. Все права защищены.</p>
-            <p>Зима близко. Будьте готовы.</p>
-        </div>
-    </footer>
-
-    <script src="src.js"></script>
+  <script src="src.js"></script>
 </body>
 </html>
